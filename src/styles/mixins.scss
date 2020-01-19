@@ -1,0 +1,40 @@
+// -----------------------------------------------------
+// Media Query
+// -----------------------------------------------------
+@mixin max($width: $mq-max) {
+  @media only screen and (max-width: $width) {
+    @content;
+  }
+}
+
+@mixin min($width: $mq-max + 1px) {
+  @media only screen and (min-width: $width) {
+    @content;
+  }
+}
+
+// -----------------------------------------------------
+// Position
+// -----------------------------------------------------
+@mixin fit-full($position: absolute) {
+  width: 100%;
+  height: 100%;
+  position: $position;
+  top: 0;
+  left: 0;
+}
+@mixin center-flex() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// ---------------------------------------------------------------
+//  Hover
+// ---------------------------------------------------------------
+@mixin hover {
+  :global(html[data-whatintent="mouse"] &:hover),
+  :global(html:not([data-whatinput="mouse"]):not([data-whatinput="touch"]) &:focus) {
+    @content;
+  }
+}
