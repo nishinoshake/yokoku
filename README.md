@@ -1,5 +1,6 @@
 # 電影予告集会
 
+[Svelte](https://svelte.dev/)と[Sapper](https://sapper.svelte.dev/)でできています。  
 https://yokoku.cc
 
 ```
