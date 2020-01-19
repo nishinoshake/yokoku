@@ -39,14 +39,6 @@
       margin-top: 1.2rem;
     }
   }
-  .about-title {
-    margin-bottom: 0.1em;
-    text-indent: -0.15em;
-    font-size: 1.2rem;
-    @include min {
-      font-size: 1rem;
-    }
-  }
   .about-text {
     white-space: nowrap;
     &:nth-of-type(n + 2) {
