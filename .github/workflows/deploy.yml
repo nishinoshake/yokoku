@@ -20,19 +20,19 @@ jobs:
     - name: Cache package
       uses: actions/cache@v1
       with:
-        path: node_modules
-        key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+        path: ${{ steps.yarn-cache.outputs.dir }}
+        key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
         restore-keys: |
-          ${{ runner.os }}-node-
+          ${{ runner.os }}-yarn-
 
     - name: Install package
-      run: npm install
+      run: yarn
 
-    - name: Run test
-      run: npm run test
+    # - name: Run test
+    #   run: yarn test
 
     - name: Generate static file
-      run: npm run generate
+      run: yarn export
 
     - name: Use Python
       uses: actions/setup-python@v1
@@ -48,4 +48,4 @@ jobs:
         AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
         AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         CF_DIST_ID: ${{ secrets.CF_DIST_ID }}
-      run: sh deploy.sh
+      run: sh scripts/deploy.sh
