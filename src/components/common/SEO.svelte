@@ -2,7 +2,7 @@
   export let title = '電影予告集会'
   export let description =
     '日本全国の隠れ予告ファンのみなさん、たぶん15分ぐらいここで潰せますよ。'
-  export let keywords = '電影予告集会'
+  export let keywords = '木村カエラ'
   export let siteUrl = 'https://yokoku.c'
   export let image = 'https://yokoku.cc/og.png?d=2020011601'
 </script>
