@@ -28,8 +28,8 @@ jobs:
     - name: Install package
       run: yarn
 
-    # - name: Run test
-    #   run: yarn test
+    - name: Run test
+      run: yarn test
 
     - name: Generate static file
       run: yarn export
