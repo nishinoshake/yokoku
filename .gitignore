@@ -3,5 +3,5 @@
 /node_modules/
 /src/node_modules/@sapper/
 yarn-error.log
-/cypress/screenshots/
+/test/e2e/screenshots/
 /__sapper__/
