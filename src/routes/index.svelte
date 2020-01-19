@@ -52,7 +52,7 @@
   recieveTrailers(entries)
 </script>
 
-<style lang="scss">
+<style lang="scss" id="error-page">
   .container {
     position: relative;
     z-index: 0;
