@@ -28,8 +28,11 @@ jobs:
     - name: Install package
       run: yarn
 
-    - name: Run test
-      run: yarn test
+    - name: Run unit test
+      run: yarn test:unit
+
+    - name: Run e2e test
+      run: yarn test:e2e
 
     - name: Generate static file
       run: yarn export
