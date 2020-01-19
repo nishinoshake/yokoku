@@ -1,7 +1,7 @@
 <script>
   import { isMouseOrTouch } from '../../../lib/helpers'
-  import { isAboutOpen, openAbout, closeAbout } from '../../../states/app'
-  import { isPlayerOpen } from '../../../states/player'
+  import { isAboutOpen, openAbout, closeAbout } from '../../../store/app'
+  import { isPlayerOpen } from '../../../store/player'
   import IconAbout from '../../common/icons/about.svelte'
 
   const handleClickNav = () => {

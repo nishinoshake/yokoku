@@ -1,6 +1,6 @@
 <script>
   import IconLogo from '../../common/icons/logo.svelte'
-  import { isPlayerOpen } from '../../../states/player'
+  import { isPlayerOpen } from '../../../store/player'
 </script>
 
 <style lang="scss">

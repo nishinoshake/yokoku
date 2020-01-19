@@ -1,5 +1,5 @@
 <script>
-  import { trailers, currentIndex, isPlayerOpen } from '../../../states/player'
+  import { trailers, currentIndex, isPlayerOpen } from '../../../store/player'
   import PlayerControlTitleRow from './PlayerControlTitleRow.svelte'
 
   let titleWidth = 0

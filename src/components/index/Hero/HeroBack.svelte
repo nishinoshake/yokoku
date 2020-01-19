@@ -1,5 +1,5 @@
 <script>
-  import { isPlayerOpen } from '../../../states/player'
+  import { isPlayerOpen } from '../../../store/player'
 
   let scale = 1
   let backRef = null

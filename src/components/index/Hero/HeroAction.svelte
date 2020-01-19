@@ -1,5 +1,5 @@
 <script>
-  import { openPlayer } from '../../../states/player'
+  import { openPlayer } from '../../../store/player'
   import IconVolume from '../../common/icons/volume.svelte'
 </script>
 

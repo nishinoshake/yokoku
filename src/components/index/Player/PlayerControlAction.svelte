@@ -1,5 +1,5 @@
 <script>
-  import { closePlayer, toPrev, toNext } from '../../../states/player'
+  import { closePlayer, toPrev, toNext } from '../../../store/player'
 </script>
 
 <style lang="scss">

@@ -1,9 +1,9 @@
 import { get } from 'svelte/store'
-import { isPlayerOpen, openPlayer } from '../../../src/states/player'
+import { isPlayerOpen, openPlayer } from '../../../src/store/player'
 
-describe('stores/player', () => {
+describe('store/player', () => {
   describe('openPlayer', () => {
-    test('初期は非表示', () => {
+    test('最初は非表示の状態から', () => {
       expect(get(isPlayerOpen)).toBe(false)
     })
     test('表示できる', () => {

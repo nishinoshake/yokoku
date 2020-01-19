@@ -1,5 +1,5 @@
 <script>
-  import { isAboutOpen } from '../../states/app'
+  import { isAboutOpen } from '../../store/app'
   import IconClose from '../common/icons/close.svelte'
 </script>
 

@@ -1,5 +1,5 @@
 <script>
-  import { isPlayerOpen } from '../../../states/player'
+  import { isPlayerOpen } from '../../../store/player'
   import PlayerControlTitle from './PlayerControlTitle.svelte'
   import PlayerControlAction from './PlayerControlAction.svelte'
 </script>

@@ -33,9 +33,9 @@
 </script>
 
 <script>
-  import { isAboutOpen, closeAbout } from '../states/app.js'
-  import { isPlayerOpen } from '../states/player.js'
-  import { recieveTrailers } from '../states/player.js'
+  import { isAboutOpen, closeAbout } from '../store/app.js'
+  import { isPlayerOpen } from '../store/player.js'
+  import { recieveTrailers } from '../store/player.js'
   import SEO from '../components/common/SEO.svelte'
   import Hero from '../components/index/Hero/Hero.svelte'
   import About from '../components/index/About.svelte'

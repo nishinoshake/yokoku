@@ -1,7 +1,7 @@
 <script>
   import { tick, onMount, onDestroy } from 'svelte'
   import { sleep, isMouseOrTouch } from '../../../lib/helpers.js'
-  import { closePlayer, toPrev, toNext } from '../../../states/player'
+  import { closePlayer, toPrev, toNext } from '../../../store/player'
 
   onMount(async () => {
     await tick()

@@ -7,7 +7,7 @@
     setCurrentIndex,
     isPlayerOpen,
     closePlayer
-  } from '../../../states/player'
+  } from '../../../store/player'
 
   let player = null
   let iframeRef = null
