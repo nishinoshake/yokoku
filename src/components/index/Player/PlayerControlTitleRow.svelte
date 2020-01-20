@@ -35,6 +35,7 @@
     white-space: nowrap;
     align-items: center;
     font-size: 1.6rem;
+    font-style: italic;
     letter-spacing: 0.14em;
     will-change: transform;
     @include fit-full;
