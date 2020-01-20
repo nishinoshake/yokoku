@@ -16,6 +16,8 @@
   let shouldPlay = false
   let isPlaying = false
 
+  $: isLastIndex = $currentIndex === $trailers.length - 1
+
   onMount(() => {
     createPlayer($trailerIds[0])
   })
@@ -33,11 +35,9 @@
 
     if (val) {
       play()
-      setCurrentIndex(0)
     } else {
       if ($currentIndex !== null) {
         stop()
-        setCurrentIndex(null)
       }
     }
   })
@@ -67,10 +67,7 @@
 
                 await tick()
 
-                if (
-                  $currentIndex === $trailers.length - 1 &&
-                  player.getCurrentTime() > 10
-                ) {
+                if (isLastIndex && player.getCurrentTime() > 10) {
                   closePlayer()
                 }
                 break
@@ -107,6 +104,8 @@
       shouldPlay = false
     }
 
+    setCurrentIndex(index)
+
     player.loadPlaylist($trailerIds, index)
 
     intervalId = setInterval(() => {
@@ -128,6 +127,8 @@
     if (shouldPlay) {
       shouldPlay = false
     }
+
+    setCurrentIndex(null)
 
     if (canPlay) {
       player.stopVideo()
